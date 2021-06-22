@@ -7,3 +7,5 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 * **Usuarios:** Los usuarios serán todos aquellos trabajadores de una entidad bancaria, cuya función sea la de rectificar que los números que se usarán para emitir tarjetas de crédito sean válidas.
 
 * Los trabajadores haran uso del *Comprobador de validez de tarjetas de crédito* para realizar dicha función.
+
+![scketch pag1](/relative/path/to/Inicial.png?raw=true "Optional Title")
