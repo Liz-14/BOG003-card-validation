@@ -8,4 +8,5 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 
 * Los trabajadores haran uso del *Comprobador de validez de tarjetas de crédito* para realizar dicha función.
 
-![scketch pag1](/relative/path/to/Inicial.png?raw=true "Optional Title")
+![scketch pag1](PrototypeImages/Inicial.png)
+![scketch pag2](PrototypeImages/Second.png)
