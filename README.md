@@ -8,7 +8,7 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 
 * Los trabajadores haran uso del *Comprobador de validez de tarjetas de crédito* para realizar dicha función.
 
-##Pototipo
+## Pototipo
 
 ### Sketch Inicial
 
