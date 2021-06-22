@@ -8,5 +8,21 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 
 * Los trabajadores haran uso del *Comprobador de validez de tarjetas de crédito* para realizar dicha función.
 
-![scketch pag1](PrototypeImages/Inicial.png)
-![scketch pag2](PrototypeImages/Second.png)
+##Pototipo
+
+### Sketch Inicial
+
+![sketch pag1](PrototypeImages/Inicial.png)
+![sketch pag2](PrototypeImages/Second.png)
+
+#### Coach Feedback
+* Poner poco texto en la explicación del funcionamiento de la app (entre el título y el formulario)
+* El botón de "validar" ponerlo a la izquierda o centro por convención.
+* El resultado "valido e invalido" ponerlos de color verde o rojo según sea el caso.
+
+## Mockup
+
+![mochup pag1](PrototypeImages/pagInicial.png)
+![mockup pag2](PrototypeImages/PagFinal.png)
+
+#### User Feedback
