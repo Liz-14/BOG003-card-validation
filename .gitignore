@@ -1,8 +1,9 @@
-PrototypeImages/
+
 coverage/
 node_modules/
 .DS_Store
 *.log
+PrototypeImages/
 
 # Editor directories and files
 .idea
