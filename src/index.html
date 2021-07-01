@@ -6,11 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Hola Mundo</h1>
-    </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+
+      <header>
+        <h1>Comprobador</h1>
+        <h2>Validez Tajetas de crédito</h2>
+      </header>
+
+      <section class="explanation">
+        <p>Hola, aquí podrás verificar si el número de tarjeta asignada es valida o no.</p>
+        <p>Por favor ingresa los siguientes datos y luego haz click en validar.</p>
+      </section>
+
+      <section class="homeScreen">
+        <input type="text" name="name" id="name" placeholder="Nombre">
+        <input type="text" name="nTajeta" id="nTarjeta" placeholder="# de tarjeta de crédito">
+        <button type="button" name="button">Validar</button>
+      </section>
+
+      <section class="finalScreem">
+        <div class="results">
+          <p> <span id="employeeN"></span> validaste el número de tarjeta:</p>
+          <p id="cardNumber"></p>
+          <p id="validation"></p>
+        </div>
+      </section>
+    </main>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
