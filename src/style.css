@@ -3,7 +3,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #492650;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +15,7 @@ main{
   text-align: center;
   background: white;
   box-shadow: 0px 0px 30px 2px #1E0E40;
+  margin: 5%;
 }
 
 header{
@@ -64,4 +64,53 @@ h2{
   font-size: 20px;
   margin: 2% 2% 5% 2%;
   padding: 3%;
+}
+
+button{
+  background-image: linear-gradient(to bottom left, #492650, #D46175);
+  font-size: 28px;
+  color: white;
+  padding: 2% 8%;
+  border-radius: 25px;
+  border-style: none;
+  margin-top: 5%;
+  max-width: 10vw;
+}
+
+button:hover{
+  background-image: linear-gradient(to bottom left, #D46175, #492650);
+}
+
+button:active{
+  background-image: radial-gradient(#492650, #D46175);
+  box-shadow: 0px 0px 10px 2px #1E0E40;
+}
+
+.results{
+  border: double 4px transparent;
+  border-radius: 15px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #492650, #D46175);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: 2% 8% 1% 8%;
+
+}
+
+.results p{
+  font-size: 20px;
+}
+
+span{
+  font-weight: bolder;
+}
+
+#validation{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#btn2{
+  font-size: 23px;
+  border-radius: 35px;
+  margin-bottom: 8%;
 }
