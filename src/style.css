@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 body {
   background-image: url(images/Fondo.png);
   background-repeat: no-repeat;
@@ -11,7 +15,7 @@ body {
 
 main{
   max-width: 25vw;
-  border-radius: 20px;
+  border-radius: 25px;
   text-align: center;
   background: white;
   box-shadow: 0px 0px 30px 2px #1E0E40;
@@ -21,17 +25,22 @@ main{
 header{
   background: linear-gradient(to top right, #492650 20%, #BB456B 70%, #D46175);
   padding: 1% 2% 4% 2%;
-  border-top-left-radius: 19px;
-  border-top-right-radius: 19px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
   color: white;
 }
 
+.title{
+  margin: 8%;
+}
+
 h1{
-  font-size: 40px;
+  font-size: 44px;
 }
 
 h2{
-  font-size: 28px;
+  margin-top: 5%;
+  font-size: 30px;
 }
 
 .explanation{
@@ -39,15 +48,16 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2% 2% 2% 2%;
+  padding: 2% 0%;
   border-top: 3px solid rgba(242,110,80, .5);
   border-bottom: 3px solid rgba(242,110,80, .5);
 }
 
 .explanation p{
-  font-size: 18px;
-  max-width: 19vw;
+  font-size: 20px;
+  max-width: 20vw;
   padding: 1%;
+  margin: 3%;
 }
 
 .homeScreen{
@@ -98,10 +108,15 @@ button:active{
 
 .results p{
   font-size: 20px;
+  margin: 6% 0%;
 }
 
 span{
   font-weight: bolder;
+}
+
+#cardNumber{
+  font-size: 23px;
 }
 
 #validation{
