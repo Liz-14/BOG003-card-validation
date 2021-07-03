@@ -5,8 +5,8 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -21,23 +21,26 @@
         </section>
       </header>
 
-      <section class="homeScreen">
+      <!-- Sección Home Screem -->
+      <section class="homeScreen" id="homeScreen">
         <input type="text" name="name" id="name" placeholder="Nombre" size="25">
-        <input type="text" name="nTajeta" id="nTarjeta" placeholder="# de tarjeta de crédito" size="25">
-        <button type="button" name="button">Validar</button>
+        <input type="text" name="cardN" id="cardN" placeholder="# de tarjeta de crédito" size="25">
+        <button type="button" id="validar">Validar</button>
       </section>
 
-      <section class="finalScreem">
+      <!-- Sección Final Screem -->
+      <section class="finalScreem" id="finalScreen">
         <div class="results">
           <p> <span id="employeeN"></span> validaste el número de tarjeta:</p>
           <p id="cardNumber"></p>
           <p id="validation"></p>
         </div>
 
-        <button id="btn2" type="button" name="button">Validar otra Tarjeta</button>
+        <button id="btn2" type="button">Validar otra Tarjeta</button>
       </section>
     </main>
 
+    <!-- script -->
     <script src="index.js" type="module"></script>
   </body>
 </html>
