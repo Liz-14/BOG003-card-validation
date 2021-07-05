@@ -26,3 +26,11 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 ![mockup pag2](PrototypeImages/PagFinal.png)
 
 #### User Feedback
+* La interfaz es visualmente atractiva.
+* La página web es intuitiva y fácil de usar.
+
+## Página Web Final
+![PagWebFinal](PrototypeImages/validadorTC.gif)
+
+## Test
+![test](PrototypeImages/Test.png)
