@@ -5,7 +5,7 @@ function validator (creditCardNumber){
   this.isValid = () => {
 
     if(this.numValid === true){
-      return alert("Por favor solo escribe numeros en el campo de # de tajeta de crédito");
+      return alert("Por favor solo escribe numeros en el campo de número de tajeta de crédito");
     }
     else {
       let cNumber = this.creditCardNumber;
