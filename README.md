@@ -30,7 +30,7 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 * La página web es intuitiva y fácil de usar.
 
 ## Página Web Final
-![PagWebFinal](PrototypeImages/validadorTC.gif)
+![PagWebFinal](PrototypeImages/validacionTC.gif)
 
 ## Test
 ![test](PrototypeImages/Test.png)
