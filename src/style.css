@@ -69,11 +69,49 @@ h2{
 }
 
 .homeScreen input{
-  border-radius: 10px;
   border: 2.5px outset #D46175;
   font-size: 20px;
-  margin: 2% 2% 5% 2%;
+  margin: 2% 0% 5% 0%;
   padding: 3%;
+  width: 15.5vw;
+}
+
+.cardNumImput{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: right;
+}
+
+#name{
+  border-radius: 15px;
+  text-align: center;
+}
+
+#masked{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 13vw;
+  border-right: none;
+  padding: 3.1% 0.8% 3.1% 0%;
+  text-align: right;
+}
+
+#unmasked{
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 2.5vw;
+  border-left: none;
+  text-align: right;
+}
+
+#cardN{
+ position: absolute;
+ width: 9.8vw;
+ padding: 0.8% 3.4%;
+ margin-top: 0.2%;
+ opacity: 0;
+ text-align: right;
 }
 
 button{
@@ -102,25 +140,25 @@ button:active{
   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #492650, #D46175);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  margin: 2% 8% 1% 8%;
-
+  margin: 9% 8% 2% 8%;
 }
 
 .results p{
   font-size: 20px;
   margin: 6% 0%;
+  padding: 0% 2%;
 }
 
 span{
   font-weight: bolder;
 }
 
-#cardNumber{
-  font-size: 23px;
+#cardNumberMasked{
+  font-size: 25px;
 }
 
 #validation{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
