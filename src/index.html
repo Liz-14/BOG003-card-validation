@@ -24,16 +24,18 @@
 
       <!-- Sección Home Screem -->
       <section class="homeScreen" id="homeScreen">
-        <input type="text" name="name" id="name" placeholder="Nombre" size="25">
-        <input type="text" name="cardN" id="cardN" placeholder="# de tarjeta de crédito" size="25">
+        <input type="text" name="name" id="name" placeholder="Nombre">
+        <div class="cardNumImput">
+          <input type="password" name="cardN" id="masked" placeholder="# de tarjeta de crédito"><input type="text" name="cardN" id="unmasked" readonly><input type="password" name="cardN" id="cardN">
+        </div>
         <button type="button" id="validar">Validar</button>
       </section>
 
       <!-- Sección Final Screem -->
       <section class="finalScreem" id="finalScreen">
         <div class="results">
-          <p> <span id="employeeN"></span> validaste el número de tarjeta:</p>
-          <p id="cardNumber"></p>
+          <p> <span id="employeeN"></span> ingresaste el número de tarjeta:</p>
+          <p id="cardNumberMasked"></p>
           <p id="validation"></p>
         </div>
 
