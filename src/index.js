@@ -36,41 +36,41 @@ const screen1 = () => {
   //Se crea la tarjeta y comienza la validacion
   let number = document.getElementById('cardN').value;
   let card = new validator(number);
-  
+
   //Verifica si hay inputs vacios
   if(document.getElementById('cardN').value == "" || document.getElementById('name').value == ""){
     return alert("llena todos los campos");
   }
-
-  //Verifica que se escriban unicamente numeros
-  if(card.isValid().answer === undefined){
-    screen2();
-  }
-  
-  //Si estan completos los campos se realizan las funciones
-  else {
-    //La pantalla inicial se esconde, mostrando la final
-    let finalSreen = document.getElementById("finalScreen");
-    finalSreen.style.display = "block";
-
-    let homeScreen = document.getElementById('homeScreen');
-    homeScreen.style.display = "none"
-
-    //Se muestra el nombre que se escribio en el input previo
-    let name = document.getElementById('name').value;
-    document.getElementById('employeeN').innerHTML = name;
-
-    //Se muestra los ultimos numeros de la tarjeta de credito ingresada
-    document.getElementById('cardNumberMasked').innerHTML = card.maskify().cNumberFinalScreen;
-    //Se muestra la validez o invalidez del numero de tarjeta
-    document.getElementById('validation').innerHTML = card.isValid().answer;
-
-    //Se cambia el color de acuerdo al resultado de la validacion
-    if(card.isValid().answer == "Valida"){
-      document.getElementById('validation').style.color = "green";
+  else{
+    //Verifica que se escriban unicamente numeros
+    if(card.isValid().answer === undefined){
+      screen2();
     }
-    else{
-      document.getElementById('validation').style.color = "red";
+    //Si estan completos los campos se realizan las funciones
+    else {
+      //La pantalla inicial se esconde, mostrando la final
+      let finalSreen = document.getElementById("finalScreen");
+      finalSreen.style.display = "block";
+
+      let homeScreen = document.getElementById('homeScreen');
+      homeScreen.style.display = "none"
+
+      //Se muestra el nombre que se escribio en el input previo
+      let name = document.getElementById('name').value;
+      document.getElementById('employeeN').innerHTML = name;
+
+      //Se muestra los ultimos numeros de la tarjeta de credito ingresada
+      document.getElementById('cardNumberMasked').innerHTML = card.maskify().cNumberFinalScreen;
+      //Se muestra la validez o invalidez del numero de tarjeta
+      document.getElementById('validation').innerHTML = card.isValid().answer;
+
+      //Se cambia el color de acuerdo al resultado de la validacion
+      if(card.isValid().answer == "Valida"){
+        document.getElementById('validation').style.color = "green";
+      }
+      else{
+        document.getElementById('validation').style.color = "red";
+      }
     }
   }
 }
