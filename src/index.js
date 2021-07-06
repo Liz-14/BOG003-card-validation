@@ -36,16 +36,17 @@ const screen1 = () => {
   //Se crea la tarjeta y comienza la validacion
   let number = document.getElementById('cardN').value;
   let card = new validator(number);
+  
+  //Verifica si hay inputs vacios
+  if(document.getElementById('cardN').value == "" || document.getElementById('name').value == ""){
+    return alert("llena todos los campos");
+  }
 
   //Verifica que se escriban unicamente numeros
   if(card.isValid().answer === undefined){
     screen2();
   }
-
-  //Verifica si hay campos vacios
-  if(document.getElementById('cardN').value == "" || document.getElementById('name').value == ""){
-    return alert("llena todos los campos");
-  }
+  
   //Si estan completos los campos se realizan las funciones
   else {
     //La pantalla inicial se esconde, mostrando la final
