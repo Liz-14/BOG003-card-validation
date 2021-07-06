@@ -15,15 +15,26 @@ function validator (creditCardNumber){
       let sumEven10 = 0;
       let sumEven2 = 0;
       let totalSum = 0;
+      let num = 0;
 
+      //"/\D/g" busca de manera global si no existe un digito del 1-9 y lo elimina;
       cNumber = cNumber.replace(/\D/g, "");
+
+      //invierte los digitos del numero de tarjeta
+      for (let i = cNumber.length - 1; i >= 0; i--){
+        num += cNumber.charAt(i);
+      }
+
+      //Elimina el 0 de la pos 0;
+      num = num.substring(1, num.length);
+
       /*bucle para reccorer el elemento "creditCardNumber" de derecha a iazquierda (Final->Inicio)*/
       //"i" respresenta la pos de cada elemnto
       for(let i = cNumber.length - 1; i >= 0; i--){
 
         //Escoge aquellos numeros que tienen posicion impar
         if(i % 2 != 0){
-          oddPosNum = parseInt(cNumber.charAt(i))*2;
+          oddPosNum = parseInt(num.charAt(i))*2;
           oddPosNum = oddPosNum.toString();
           //Escoge aquellos numeros que en la operacion anterior sean mayores a 10 y los suma entre si
           if(oddPosNum >= 10){
@@ -36,7 +47,7 @@ function validator (creditCardNumber){
         }
         //hace la suma de todos los numeros que tienen psociion impar
         else {
-          evenPosNum += parseInt(cNumber.charAt(i));
+          evenPosNum += parseInt(num.charAt(i));
         }
       }
       //Suma todos los elementos resultado de las operaciones anteriores
