@@ -31,6 +31,7 @@ La siguiente aplicación web tiene como propósito permitir a una entidad bancar
 
 ## Página Web Final
 ![PagWebFinal](PrototypeImages/validacionTC.gif)
+https://liz-14.github.io/BOG003-card-validation/src/
 
 ## Test
 ![test](PrototypeImages/Test.png)
