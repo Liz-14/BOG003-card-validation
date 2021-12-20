@@ -231,10 +231,12 @@ span{
   }
 
   #masked{
-    width: 37vw;
-    text-align: center;
-    padding-left: 5rem;
-    }
+    width: 42vw;
+  }
+
+  #unmasked{
+    width: 6.5vw;
+  }
 
   #cardN{
     width: 42vw;
