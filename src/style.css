@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
 }
 
 main{
@@ -55,7 +56,6 @@ h2{
 
 .explanation p{
   font-size: 20px;
-  max-width: 20vw;
   padding: 1%;
   margin: 3%;
 }
@@ -170,4 +170,76 @@ span{
 
 #finalScreen{
   display: none;
+}
+
+/* ----------------- RESPONSIVE ---------------- */
+
+@media(max-width:1700px){
+  main{
+    max-width: 35vw;
+  }
+
+  .homeScreen input{
+    width: 23vw;
+  }
+
+  #masked{
+    width: 21vw;
+  }
+  
+  #unmasked{
+    width: 3.5vw;
+  }
+
+  #cardN{
+    width: 18vw;
+   }
+
+   button{
+     max-width: 15vw;
+   }
+}
+
+@media(max-width:1220px){
+  main{
+    max-width: 45vw;
+  }
+
+  .homeScreen input{
+    width: 30vw;
+  }
+
+  #masked{
+    width: 29vw;
+  }
+
+  #cardN{
+    width: 25vw;
+   }
+
+   button{
+     max-width: 20vw;
+   }
+}
+
+@media(max-width:1000px){
+  main{
+    max-width: 70vw;
+  }
+
+  .homeScreen input{
+    width: 45vw;
+  }
+
+  #masked{
+    width: 45vw;
+  }
+
+  #cardN{
+    width: 42vw;
+   }
+
+   button{
+     max-width: 30vw;
+   }
 }
